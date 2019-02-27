@@ -32,10 +32,10 @@ public class E1_4 {
 				tmp *= lista.poll();
 			else{
 				total += tmp;
-				tmp = lista.poll();
-				if(lista.peek() == null)
-					total += tmp;
+				tmp = lista.poll();	
 			}
+			if(lista.peek() == null)
+					total += tmp;
 		}
 		
 		return total;		
