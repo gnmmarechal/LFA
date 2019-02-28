@@ -14,13 +14,12 @@ public class E1_5 {
 				double res = op(opA,opB,in[1]);
 				System.out.printf("%.5f %s %.5f = %.5f\n",opA,in[1],opB,res);		
 			}catch(Exception e){
-				System.out.println("ola");
+				calcular(in);
 			}
 		}
 	}
 	/*
 	 * Tipo de operações
-	 * 1 + 2
 	 * n = 2
 	 * n + 1
 	 * n = 1 + 2 + n ...
@@ -33,7 +32,10 @@ public class E1_5 {
 	 * 	map.get(n) :))))
 	 * }
 	 */
-	 
+	private static double calcular(String[] conta){
+		return 0;
+		
+	}
 	private static double op(double a, double b, String o){
 		switch(o){
 				case "+":
@@ -47,6 +49,7 @@ public class E1_5 {
 				case "%":
 					return a % b;
 				default:
+					System.err.println("Operador " + o + " não reconhecido.");
 					return -1;
 			}	
 	}	
